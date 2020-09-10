@@ -4,10 +4,35 @@ Selector{
 }
 */
 
+body{
+background-image: url("http://www.purelypoultry.com/wordpress/wp-content/uploads/2014/03/baby-chick-in-hand.jpg");
+background-size:cover;
+}
+
 h2{
-  color: red;
+  color: #FCFF00;             /*The colors can expressed on RGB or Hexadecimal */
+  text-align: center;
+  border: 5px dashed rgba(255 ,106,0,0.5); /* The a stand off opacity */
+  cursor:wait;
 }
 
 p{
   color:green;
+}
+
+p{
+  color:white;
+}
+
+li{
+  color:red;
+  display: inline-block;
+}
+
+a:link{
+  color:orange;
+}
+
+a:visited{
+  color:yellow;
 }
