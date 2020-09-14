@@ -4,12 +4,37 @@ Selector{
 }
 */
 
+
+/*
+Important selectors
+#id(you can use the id but in one time in the same element)
+* (apply for all elements)
+.class(you can diferent .class in the same element)
+element
+element,element (it means that the style that applies for the first element also applies to the second element)
+element element(means that style applies for the second element that is inside of the first element)
+element > element (means that style applies to the second element if his parent is the element 1 )
+element + element(select the second element that is exactly after first element)
+hover: (change the style when you put the mouse in the elements)
+last-child select only the last child
+first-child select only the first child
+!importrant [apply one propperty and doens't change if you apply more styles in the future (not recommended)]
+
+
+
+*/
+
+
+*{
+  text-align: right;
+}
+
 body{
 background-image: url("http://www.purelypoultry.com/wordpress/wp-content/uploads/2014/03/baby-chick-in-hand.jpg");
 background-size:cover;
 }
 
-h2{
+h2 + p:hover{
   color: #FCFF00;             /*The colors can expressed on RGB or Hexadecimal */
   text-align: center;
   border: 5px dashed rgba(255 ,106,0,0.5); /* The a stand off opacity */
@@ -17,7 +42,7 @@ h2{
 }
 
 p{
-  color:green;
+  color:green !important;
 }
 
 p{
@@ -35,4 +60,20 @@ a:link{
 
 a:visited{
   color:yellow;
+}
+
+.webtext:first-child{
+  border: 5px dashed green;
+}
+
+.active{
+  color: red;
+}
+
+#div1{
+  background:rgba(0,0,255,0.2);
+}
+
+#div2{
+  background:rgba(255,0,0,0.2);
 }
