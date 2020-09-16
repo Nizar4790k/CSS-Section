@@ -41,12 +41,22 @@ h2 + p:hover{
   cursor:wait;
 }
 
-p{
-  color:green !important;
+img{
+  float: right;
+}
+
+footer{
+  clear: both;
 }
 
 p{
-  color:white;
+  color:red;
+  text-decoration-line: overline;
+  text-transform: uppercase;
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 110%;
+  font-family: 'Ranchers', cursive;
 }
 
 li{
